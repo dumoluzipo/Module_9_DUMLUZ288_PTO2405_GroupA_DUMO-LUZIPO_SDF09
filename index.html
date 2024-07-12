@@ -3,51 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Example</title>
+    <title>Responsive Footer Example</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
+    <footer class="bg-[#659f8f] dark:bg-[#659f8f]">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="col-span-1 mb-6 sm:mb-0">
+                    <h1 class="max-w-lg font-bold text-lg sm:text-xl md:text-2xl">Subscribe to our newspaper for updates.</h1>
+                    <div class="flex mt-4 space-x-2">
+                        <input id="email" type="text" class="border-2 border-gray-300 p-2 rounded-md w-full" placeholder="Enter your email">
+                        <button class="px-6 py-2.5 bg-[#d86943] border-2 border-gray-300 rounded-md">Subscribe</button>
                     </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
+                </div>
+                <div class="col-span-1 mb-6 sm:mb-0">
+                    <p class="text-[#0d1117] dark:text-black font-bold  sm:text-lg md:text-xl">Quick Links</p>
+                    <div class="flex flex-col mt-4 space-y-2">
+                        <a href="#" class="text-sm sm:text-sm md:text-lg">Home</a>
+                        <a href="#" class="text-sm sm:text-sm md:text-lg">Who We Are</a>
+                        <a href="#" class="text-sm sm:text-sm md:text-lg">Our Philosophy</a>
                     </div>
+                </div>
+                <div class="col-span-1">
+                    <p class="text-[#0d1117] dark:text-black font-bold  sm:text-lg md:text-xl">Technologies</p>
+                    <div class="flex flex-col mt-4 space-y-2">
+                        <a href="https://www.w3schools.com/html/" class="text-sm sm:text-sm md:text-lg">HTML</a>
+                        <a href="https://www.w3schools.com/css/" class="text-sm sm:text-sm md:text-lg">CSS</a>
+                        <a href="https://www.w3schools.com/js/" class="text-sm sm:text-sm md:text-lg">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-[#d86943]">
+            
+            <div class="flex justify-center">
+                <a href="#">
+                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="Footer Logo">
+                </a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
